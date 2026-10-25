@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: 0.0.16
+  version: "1.0.0"
 
 package:
   name: merge3
@@ -9,10 +9,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/m/merge3/merge3-${{ version }}.tar.gz
-  sha256: 0852de4381cb46be5ef4ed49e3ac20c5a4a0cd46a8ff4bbb870bc27aab543306
+  sha256: 4a8251068cdb2c1aba76d31ae6aff5e6a47c79a1ee1071d5a58f37bf09f2a790
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   python:
